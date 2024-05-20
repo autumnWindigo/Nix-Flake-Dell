@@ -12,6 +12,7 @@
 			placement_strategy = "center";
 
 			copy_on_select = "clipboard";
+			confirm_os_window_close = 0;
 		};
 	};
 }

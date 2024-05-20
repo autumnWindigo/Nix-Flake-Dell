@@ -20,6 +20,9 @@ in {
 
 		# wayland utils
 		wl-clipboard
+		hyprpaper
+		alsamixer
+		pavucontrol
 
 		# terminals
 		kitty
