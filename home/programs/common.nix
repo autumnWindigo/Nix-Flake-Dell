@@ -5,6 +5,9 @@ let
 in {
 	fonts.fontconfig.enable = true;
 	home.packages = with pkgs; [
+		# messengers
+		discord
+
 		# archives
 		zip
 		unzip
@@ -21,7 +24,6 @@ in {
 		# wayland utils
 		wl-clipboard
 		hyprpaper
-		alsamixer
 		pavucontrol
 
 		# terminals
@@ -32,6 +34,14 @@ in {
 
 		# File Managers
 		ranger
+
+		# Work
+		zoom-us
+		globalprotect-openconnect
+
+		# Wine
+		winetricks
+		wineWowPackages.waylandFull
 
 		# Fonts
 		twilio-sans-mono

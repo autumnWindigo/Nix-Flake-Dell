@@ -14,8 +14,8 @@
 			general = {
 				gaps_in = 5;
 				gaps_out = 5;
-				border_size = 1;
-				"col.active_border" = "rgba(a6e3a1ee) rgba(cba6f7) 45deg";
+				border_size = 4;
+				"col.active_border" = "rgba(a6e3a1ee) rgba(cba6f7ee) 45deg";
 				"col.inactive_border" = "rgba(00000000)";
 			};
 
@@ -27,7 +27,7 @@
 				"$mod, d, exec, wofi --show drun" 
 				"$mod shift, q, killactive"
 				"$mod, return, exec, kitty"
-				"$mod shift, f, fullcreen, 1"
+				"$mod, f, fullscreen, 1"
 				"$mod, v, togglefloating"
 
 				 # switch workspace
@@ -104,7 +104,7 @@
 			};
 
 			windowrulev2 = [
-				
+				"opacity 0.8 0.8,class:^(kitty)$"
 			];
 			
 			animations = {

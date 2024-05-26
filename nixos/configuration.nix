@@ -31,10 +31,22 @@
   };
   hardware.opengl.enable = true;
 
+  nixpkgs.config.allowUnfree = true;
+
 
   networking.hostName = "windigo-nix";
   # Pick only one of the below networking options.
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+
+  networking.nameservers = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
+
+	services.resolved = {
+	  enable = true;
+	  dnssec = "true";
+	  domains = [ "~." ];
+	  fallbackDns = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
+	  dnsovertls = "true";
+	};
 
   # Set your time zone.
   time.timeZone = "America/New_York";
