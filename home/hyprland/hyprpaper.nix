@@ -1,9 +1,9 @@
 { ... } : {
-	home.file = {
-		".config/hypr/hyprpaper.conf" = {
+	xdg.configFile = {
+		"hypr/hyprpaper.conf" = {
 			source = ./hyprpaper.conf;
 		};
-		".config/hypr/twilight_bg1.png" = {
+		"hypr/twilight_bg1.png" = {
 			source = ./pictures/twilight_bg.png;
 		};
 	};
